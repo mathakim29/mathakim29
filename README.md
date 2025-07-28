@@ -1,3 +1,1 @@
-# Hi
-My name is LUQMAN AL-HAKIM
-
+![](https://abrudz.github.io/logos/Python.svg)
