@@ -1,1 +1,1 @@
-![](https://abrudz.github.io/logos/Python.svg)
+![](https://github.com/mathakim29/mathakim29/blob/main/logo.png)
