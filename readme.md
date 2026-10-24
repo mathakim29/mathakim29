@@ -1,1 +1,1 @@
-<svg src="readme.svg"></svg>
+![](./readme.svg)
