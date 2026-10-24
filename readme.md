@@ -1,0 +1,1 @@
+<svg src="readme.svg"></svg>
