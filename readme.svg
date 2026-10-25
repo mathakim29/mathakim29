@@ -1,80 +1,44 @@
-<svg fill="none" viewBox="0 0 500 120" width="500" height="120" xmlns="http://www.w3.org/2000/svg">
+<svg fill="none" viewBox="0 0 600 160" width="600" height="160" xmlns="http://www.w3.org/2000/svg">
   <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml" style="width: 100%; height: 100%; overflow: hidden; white-space: nowrap; position: relative;">
-      <h1 style="
-        display: inline-block;
-        position: absolute;
-        animation: scroll 10s linear infinite, bounce 0.8s alternate infinite, rainbow 3s linear infinite;
-        font-family: 'Comic Sans MS', cursive;
-        font-weight: bold;
-        font-style: italic;
-        font-size: 1.5em;">
-        Woah look at this bouncing text
-      </h1>
-
-      <h2 style="
-        display: inline-block;
-        position: absolute;
-        animation: scroll 12s linear infinite, bounce 1s alternate infinite, pulse-glow 2s ease-in-out infinite;
-        animation-delay: 1s;
-        font-family: 'Comic Sans MS', cursive;
-        font-weight: bold;
-        font-style: italic;
-        color: cyan;
-        font-size: 2em;
-        top: 40px;">
-        Very cool
-      </h2>
-
-      <h3 style="
-        display: inline-block;
-        position: absolute;
-        animation: scroll 8s linear infinite, bounce 1.2s alternate infinite, shaky 0.3s ease-in-out infinite;
-        animation-delay: 2s;
-        font-family: 'Times New Roman', serif;
-        font-weight: bold;
-        color: LightSalmon;
-        font-size: 1.3em;
-        top: 80px;">
-        Everyone knows <span style="color: white;">dark</span><span style="color: #0D1117;">light</span> mode is better
-      </h3>
-    </div>
-
-    <style>
-      @keyframes scroll {
-        0% { transform: translateX(100%); }
-        100% { transform: translateX(-100%); }
-      }
-
-      @keyframes bounce {
-        0% { transform: translateY(0); }
-        100% { transform: translateY(-10px); }
-      }
-
-      @keyframes rainbow {
-        0% { color: hotpink; }
-        33% { color: yellow; }
-        66% { color: lime; }
-        100% { color: hotpink; }
-      }
-
-      @keyframes pulse-glow {
-        0%, 100% { text-shadow: 0 0 2px rgba(0, 255, 255, 0.4); }
-        50% { text-shadow: 0 0 12px rgba(0, 255, 255, 0.9), 0 0 20px cyan; }
-      }
-
-      @keyframes shaky {
-        0%, 100% { transform: translateY(0) rotate(0deg); }
-        25% { transform: translateY(-2px) rotate(-1deg); }
-        75% { transform: translateY(2px) rotate(1deg); }
-      }
-
-      h1, h2, h3 {
-        position: absolute;
-        margin: 0;
-        padding: 0;
-        will-change: transform;
-      }
-    </style>
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <style>
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{margin:0;padding:0;background:transparent}
+        .terminal-box{background-color:#0a0a0a;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace;width:600px;height:160px;padding:16px 20px;border:1px solid #1a231e;border-radius:8px;color:#10b981;display:flex;flex-direction:column;justify-content:center;gap:4px}
+        .features-list{display:flex;flex-direction:column;gap:2px;font-size:13px;color:#10b981}
+        .feature-line{display:flex;align-items:center;gap:10px;padding:5px 8px;border-radius:5px;text-decoration:none;color:inherit;cursor:pointer;border:1px solid transparent;transition:background .15s ease, border-color .15s ease, transform .15s ease, color .15s ease}
+        .feature-line:hover,.feature-line:focus-visible{background:#0f1f18;border-color:#14382c;color:#34d399;transform:translateX(3px);outline:none}
+        .feature-line:active{transform:translateX(3px) scale(.99)}
+        .icon{width:16px;text-align:center;flex-shrink:0;font-size:13px;color:#059669;transition:color .15s ease}
+        .feature-line:hover .icon,.feature-line:focus-visible .icon{color:#34d399}
+        .dim-text{color:#059669;transition:color .15s ease}
+        .feature-line:hover .dim-text,.feature-line:focus-visible .dim-text{color:#6ee7b7}
+      </style>
+    </head>
+    <body>
+      <div class="terminal-box">
+        <div class="features-list">
+          <div class="feature-line">
+            <span class="icon" aria-hidden="true">⌘</span>
+            <span>stack: <span class="dim-text">Docker, Linux, CLI Tooling</span></span>
+          </div>
+          <a class="feature-line" href="tel:+15551234567" aria-label="Call +1 (555) 123-4567">
+            <span class="icon" aria-hidden="true">☎</span>
+            <span>phone: <span class="dim-text">+1 (555) 123-4567</span></span>
+          </a>
+          <a class="feature-line" href="mailto:dev@example.com" aria-label="Email dev@example.com">
+            <span class="icon" aria-hidden="true">✉</span>
+            <span>email: <span class="dim-text">dev@example.com</span></span>
+          </a>
+          <a class="feature-line" href="https://example.com" target="_blank" rel="noopener noreferrer" aria-label="Open example.com">
+            <span class="icon" aria-hidden="true">⌂</span>
+            <span>website: <span class="dim-text">example.com</span></span>
+          </a>
+        </div>
+      </div>
+    </body>
+    </html>
   </foreignObject>
 </svg>
